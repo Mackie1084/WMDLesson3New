@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>WMD Lesson 3</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/sky.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2 class="fragment">WMD Lesson 3: Learning Outcomes</h2>
+              
+                  <ul id="fragment">
+                    <li class="fragment">LO1: Understand the layout of an HTML document</li>
+                    <li class="fragment">LO2: Familiar with the uses of each HTML element</li>
+                    <li class="fragment">LO3: Use the appropriate HTML tags in designing a web page</li>
+                  </ul>
+        </section>
+         <section>
+          <h2 class="fragment">Lesson 3: Topics</h2>
+              <h3 class="fragment">Introduction to HTML</h3>
+                  <ul id="fragment">
+                    <li class="fragment">3.1 Web Technology Components</li>
+                    <li class="fragment">3.2 HTML Editors</li>
+                    <li class="fragment">3.3 Basic HTML Syntax</li>
+                    <li class="fragment">3.4 HTML Element</li>
+                    <li class="fragment">3.5 HTML Attributes</li>
+                  </ul>
+        </section>
+        <!--Activity 1-->
+        <section>
+          <h3>Activity 1</h3>
+          <h5 class="fragment">
+            How do you think the given webpage below is displayed into a browser?
+          </h5>
+           <a class="fragment" href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/Activity1.png">1. Click link for Activity1 Image</a>
+           <br>
+           <br>
+           <a class="fragment" href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/HowPageisdisplayed.png">2. Click link for How a Page Request Works</a>
+          </section>
+        <!--3.1 Topic Codes-->
+        <section>
+            <h3>3.1 Web Technology Components</h3>
+                  <br>
+                  <div>
+                    <div class="box1 fragment fade-right">
+                    <h6 style="text-align:center;">Web Technology Components</h6></div>
+                  
+                    <div class="box2 fragment fade-right">
+                    <h6 style="text-align:center;">HTML Editors</h6></div>
+                
+                    <div class="box3 fragment fade-right">
+                    <h6 style="text-align:center;">Basic HTML Syntax</h6></div>
+
+                    <div class="box4 fragment fade-right">
+                    <h6 style="text-align:center;">HTML Element</h6></div>
+
+                    <div class="box5 fragment fade-right">
+                    <h6 style="text-align:center;">HTML Attributes</h6></div>
+        </section>
+
+        <section>
+          <section data-background="#dddddd">
+            <h2>Web Technology Components</h2>
+            <ul>
+              <li><strong>URL</strong> is a notation scheme for referencing accessible resources over the Internet</li>
+              <li><strong>HTTP</strong> is the foundation Protocol over the World Wide Web</li>
+              <li><strong>Web servers</strong> and <strong>browser</strong> exchange information using HTTP</li>
+            </ul>
+            <a href="#" class="navigate-down">
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+          
+          <section data-background="#dddddd">
+            <h2>General Notation Associated with URLs</h2>
+            <ul>
+              <li>Scheme</li>
+              <li>Host</li>
+              <li>Port#</li>
+              <li>Path</li>
+              <li>URL-params</li>
+              <li>Query string</li>
+              <li>Anchor</li>
+            </ul>
+            <br>
+            <br>
+             <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/standardmarkuplanguage.png">Click link for the Notations</a>
+            <p>To be able to create web pages as discussed in Activity 1,
+               we need to use a standard mark-up language and that is HTML
+            </p>
+
+            <p>HTML is a standard markup language to create web pages.</p>
+           
+          </section>
+          <section>
+            <ul>
+              <li>HTML stands for HyperText Markup language</li>
+              <li>HTML describes the structure of Web pages using markup</li>
+              <li>HTML elements are the building blocks of HTML pages</li>
+              <li>HTML elements are represented by tags</li>
+              <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+              <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+            </ul>
+            <a href="#" class="navigate-down">
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+          <section>
+           <h2>Example</h2>
+          <pre>
+            <code class="language-html" data-trim>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="en"&gt;
+                &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                  &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;First Heading&lt;/h1&gt;
+                  &lt;p&gt;First Paragraph&lt;/p&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+          </section>
+          <section>
+            <h3>Example Explained</h3>
+            <ul>
+              <li>The <strong>!DOCTYPE html</strong> declaration defines this document to be HTML5</li>
+              <li>The <strong>html</strong> element is the root element of an HTML page</li>
+              <li>The <strong>head</strong>element contains meta information about the document</li>
+              <li>The <strong>title</strong> element specifies a title for the document</li>
+              <li>The <strong>body </strong>element contains the visible page content</li>
+              <li>The <strong>h1</strong> element defines a large heading</li>
+              <li>The <strong>p </strong>element defines a paragraph</li>
+            </ul>
+          </section>
+          <section>
+            <h3>HTML Versions</h3>
+             <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/htmlversions.png">Click link for the HTML Versions</a>
+          </section>
+        </section>
+         
+        <!--3.2 Topic Codes-->
+          <section>
+            <h3>3.2 HTML Editors</h3>
+                  <h5>In order to write HTML documents and create web pages, we need an editor and there so many 
+                    editors used these days but the most basic one is the Notepad. But in this lesson we will use a Visual Code editor from Microsoft.
+                  </h5>
+                   <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/visualstudiocode.png">Click link for the HTML Editor</a>
+                   <br>
+                   <br>
+                   <br>
+                   <a href="https://code.visualstudio.com">https://code.visualstudio.com</a>
+          </section>
+        <section>
+            <section>
+            <h3>Activity 2</h3>
+            <p>Create an HTML page to display a table with two records as 
+              as shown in the given link
+            </p>
+               <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/Activity2.png">Click link Activity2 display</a>
+              
+            </section>    
+          <section>
+            <h3>Basic HTML syntax</h3>
+            <p>
+             All html script has a beginning and a closing tag.
+             <pre>
+              <code class="language-html" data-trim>
+                 &lt;html&gt; Beginning/Starting tag
+                 &lt;/html&gt; Ending/Closing tag
+              </code>
+             </pre>
+            </p>
+            <br>
+            <a href="#" class="navigate-down">
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+        </section>
+
+        <!--3.3 Topic Code-->
+          <section>
+            <h3>3.3 Development </h3>
+            <p>Remember the HTML defines the contents of a web page
+              and it follows a certain document structure.
+            </p>
+             <h3><strong>Activity 3</strong></h2>
+              <p>
+              If for example, the html tag line does not have a 
+              closing tag? What do you think will happen to the output?
+              </p>
+              <br>
+              <a href="#" class="navigate-down">
+                <img
+                  class="r-frame"
+                  style="background: rgba(255, 255, 255, 0.1)"
+                  width="178"
+                  height="238"
+                  data-src="https://static.slid.es/reveal/arrow.png"
+                  alt="Down arrow"
+                />
+              </a>
+          </section>
+          <section>
+            <section>
+              <h3>3.3.1 List of common HTML Tags</h3>
+              <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/CommonHTMLTags.png">Click the link for the List of Common HTML Tags</a>
+              <br>
+              <br>
+              <br>
+              <h3><strong>Activity 4</strong></h2>
+              <p>
+              Create a web page which uses all the common HTML tags
+              </p>
+            </section>
+          </section>
+
+          <!--3.4 Topic Code-->
+          <section>
+            <h3>3.4 HTML Elements</h3>
+            <p class="fragment">HTML element is defined by starting tag. If the element 
+              contains other contents then it ends with a closing tag.
+            </p>
+            <br>
+            <a class ="fragment" href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/htmlelements.png"> 
+              Click the link for the HTML element   
+            </a>
+            <br>
+            <br>
+            <p class="fragment">
+              HTML elements can also be nested and depending on how you want the 
+              layout of the website and web pages will be.
+            </p>
+            <br>
+             <a class ="fragment" href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/WebLayout.png"> 
+              Click the link for the Web Layout
+            </a>
+          </section>
+          <section>
+            <p>So, understanding how each of the HTML elements are arranged and designed adds 
+              to how a website and web pages are displayed into the browser.
+            </p>
+            <br>
+            <br>
+            <a class="fragment" href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/webcomponents.png">
+              Click the link for the Web Components
+            </a>
+          </section>
+          
+           <!--3.5 Topic Code-->
+          <section>
+            <h3>3.5 HTML Attributes </h3>
+            <br>
+            <br>
+            <a href="https://github.com/Mackie1084/WMDLesson3New/blob/main/ImageLinks/htmlattributes.png">
+            Click the Link for the HTML Attributes
+            </a>
+          </section>
+
+       
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+    </script>
+  </body>
+</html>
