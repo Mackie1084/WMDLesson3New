@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js Live Code Editor</title>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/sky.css">
+  <style>
+    textarea {
+      width: 100%;
+      height: 200px;
+      font-family: monospace;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide with live HTML editor -->
+    <section>
+      <h2>Edit HTML Code</h2>
+      <textarea id="html-editor">
+<h1>Hello World</h1><h1>Hello World</h1>
+<p>This is editable HTML!</p>
+      
+<p>This is editable HTML!</p>
+      </textarea>
+      <button onclick="runCode()">Run</button>
+      <iframe id="preview"></iframe>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+<script>
+  Reveal.initialize();
+
+  function runCode() {
+    const code = document.getElementById('html-editor').value;
+    const iframe = document.getElementById('preview');
+    iframe.srcdoc = code;
+  }
+
+  // Auto-run on slide load
+  Reveal.on('slidechanged', function(event) {
+    if (event.currentSlide.querySelector('#html-editor')) {
+      runCode();
+    }
+  });
+</script>
+
+</body>
+</html>
